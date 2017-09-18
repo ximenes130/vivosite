@@ -1,0 +1,161 @@
+@font-face {
+    font-family: roboto;
+    src: url('assets/Roboto-Bold.tff');
+    font-weight: bold;
+ }
+ @font-face {
+    font-family: roboto;
+    src: url('assets/Roboto-Medium.tff');
+ }
+
+body {
+    margin: 0;
+}
+
+.page-content{
+    background: #EEE;
+    z-index: 1;
+    padding-top: 10px
+}
+
+.section{
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px;
+    height: 500px;
+    height: 80vh;
+}
+
+.title{
+    font-family: roboto, Sans-serif;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    padding: 10px 15px;
+    background: #333;
+}
+
+div.header {
+    overflow: hidden;
+    background: transparent;
+    height: 500px;
+    height: 80vh;
+}
+
+.header-content {
+    background: transparent;
+    z-index: 1;
+    text-align: center;    
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-content img{
+    width: 40%;
+}
+
+.bg_video{
+    z-index: -100;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul.navigation-bar{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: #333;
+    z-index: 100;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+ul.navigation-bar li {
+    float: right;
+}
+
+ul.navigation-bar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navigation-bar a:hover{
+    background-color: #222;
+    transition: background-color 200ms ease-in-out;
+}
+
+ul.navigation-bar a:hover::after{
+    content: 'tres';
+    padding: 0px 16px;
+    position: absolute;
+    bottom: 0px;
+    transform: translateX(-47px);
+    height: 2px;
+    background: yellow;
+}
+
+.events.section{
+    height: 500px;
+    height: calc(80vh + 57px);
+}
+
+.carousel.slide.section{
+    
+}
+
+.carousel-item{
+    min-height: 500px;
+    min-height: 80vh;
+    width: auto;
+    height: auto;
+}
+
+.calendar .buttons {
+    display: flex;
+}
+
+.calendar .buttons div{
+    height: 70px;
+    flex: 1;
+    transition: filter 200ms ease-in-out;
+}
+
+.calendar .buttons div:hover {
+    filter: brightness(85%);
+}
+
+.calendar .buttons div.selected{
+    filter: brightness(85%);
+}
+.calendar .buttons div.selected::after {
+    content: '';
+    color: yellow;
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    bottom: 0px;
+}
+
+.calendar iframe{
+    width: 100%;
+    height: 500px;
+    height: calc(80vh - 70px);
+}
+
+@media screen and (max-width: 480px) {  
+    .header-content img{
+        width: 100%;
+    }
+}
