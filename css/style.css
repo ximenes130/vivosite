@@ -10,3 +10,13 @@
 .brand-logo img {
     padding-top: 5px;
 }
+
+.jumbotron {
+    height: 400px;
+    text-align: center;
+}
+
+.jumbotron img {
+    padding: 40px 0;
+    height: 400px;
+}
